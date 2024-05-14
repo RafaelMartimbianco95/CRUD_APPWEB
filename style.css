@@ -1,0 +1,126 @@
+body{
+    font-family: "verdana";
+    background-color:GRAY;
+}
+
+table{
+    width: 100%;
+    border: 1px solid;
+    margin-top: 15px;
+    height: fit-content;
+
+}
+
+th{
+    background-color: darkblue;
+    color: white;
+    font-family: monospace;
+    height: 10px;
+
+}
+
+tr{
+    height: 10px;
+    background-color: white;
+    font-family: monospace;
+}
+td{
+    border: 1px dotted gray;
+    height: 10px;
+    font-family: monospace;
+}
+
+div{
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+fieldset{
+    text-align: left;
+}
+
+legend{
+    font-weight: bold;
+}
+
+button{
+    border-radius: 5px;
+    height: 25px;
+    margin: 3px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 3px;
+}
+.delButton{
+    background-color: red;
+    color: white;
+}
+
+.insertNew{
+    background-color: green;
+    color: white;
+}
+
+.upButton{
+    background-color: yellow;
+}
+
+.viewDb{
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    height: 70vh;
+    min-height: 400px;
+    width: 700px;
+    background-color: silver;
+    
+}
+
+
+.services{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    width: 300px;
+    display: inline-block;
+    height: 500px;
+    text-align: center;
+    background-image: linear-gradient(silver, white,silver);
+}
+
+.content{
+    margin:none;
+    width: 100%;
+}
+
+label{
+    color: darkblue;
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: silver;
+    height: 40px;
+    text-align: center;
+    background-image: linear-gradient(blue, darkblue);
+    margin-top: -2px
+}
+
+footer{
+    text-align: center;
+    color: silver;
+    position:static;
+    transform: translateY(50px);
+}
+
+.srcButton{
+    width: 20px;
+    background: none;
+    border: none;
+    
+}

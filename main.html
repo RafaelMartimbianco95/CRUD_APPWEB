@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUD Application</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <h1>CRUD Application</h1>
+  <div class="content">
+    <div class="services">
+      <label><b>Services</b></label>
+      <fieldset>
+        <legend>INSERT</legend>
+        <input type="text" id="newId" placeholder="Novo ID" class="inputId">
+        <input type="text" id="newDes" placeholder="Nova Descrição" class="inputDes">
+        <input type="number" id="newQt" placeholder="0.00" class="inputQt">
+        <button class="insertNew" onclick="New()">Adicionar</button>
+      </fieldset>
+    
+        <fieldset>
+          <legend>UPDATE</legend>
+          <input type="text" id="upId" placeholder="ID" class="inputId"><button onclick="buscaUp(document.getElementById('upId').value)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OK85m7EmGwhye5ZAoI_11wiBNe8xWpNoIg&s" title="Buscar" class="srcButton"></button>
+          <input type="text" id="upDes" placeholder="Descrição" disabled class="inputDes">
+          <input type="number" id="upQt" placeholder="0.00" disabled class="inputQt">
+          <button class="upButton" onclick="upDate()">Atualizar</button>
+        </fieldset>
+    
+          <fieldset>
+            <legend>DELETE</legend>
+            <input type="text" id="delId" placeholder="ID" class="inputId"><button onclick="buscaDel(document.getElementById('delId').value)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OK85m7EmGwhye5ZAoI_11wiBNe8xWpNoIg&s" title="Buscar" class="srcButton"></button>
+            <input type="text" id="delDes" placeholder="Descrição" disabled class="inputDes">
+            <input type="number" id="delQt" placeholder="0.00" disabled class="inputQt">
+            <button class="delButton" onclick="deleteItem()">Excluir</button>
+          </fieldset>
+    
+    </div>
+    
+        <div class="viewDb">
+            <label><b>Output:</b></label><br>
+            <table id="tabela">
+              <th>ID</th>
+              <th>DESCRIÇÃO</th>
+              <th>VALOR</th>
+  
+            </table>
+        </div>
+  </div>
+  <footer>Powered by Rafael Barbosa Marimbianco | rafaelbm27@hotmail.com | 2024</footer>
+  <script src="/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">S</script>
+</body>
+
+</html>
